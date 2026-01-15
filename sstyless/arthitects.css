@@ -7,3 +7,123 @@
   font-weight:400;
   font-style: normal;
 }
+/* shared style */
+.display-flex{
+    display: flex;
+}
+/* dark02 */
+.text-grey{
+    color: #424242;
+}
+/* dark03 */
+.text-light-grey{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+    color: white;
+    background-color: #ff900e;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+main{
+    max-width: 1440px;
+    width: 75%;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* header style */
+
+/* navbar related style */
+.navbar, .banner{
+   
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* banner-related-style */
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-img{
+    width: 100%;
+}
+/* teams and feature related  styles */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 60px;
+    max-width: 535px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+#of-our{
+    color: rgba(19, 19, 19, 1);
+}
+#features{
+    color: rgba(255, 144, 14, 1);
+}
+
+
+/* responsive media query */
+@media screen and (max-width:576px){
+    
+    .navbar,
+    .nav-links,
+    .teams{
+        flex-direction: column;
+        /* margin: 0 20px; */
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .our-features{
+    margin-left: 0px;
+    /* max-width: 535px; */
+}
+    
+    
+}
